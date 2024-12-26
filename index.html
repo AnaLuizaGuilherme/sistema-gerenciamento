@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Contas e Senhas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Gerenciador de Contas e Senhas</h1>
+    <div id="auth-forms">
+        <form id="register-form">
+            <input type="text" id="register-name" placeholder="Nome" required>
+            <input type="email" id="register-email" placeholder="Email" required>
+            <input type="text" id="register-cpf" placeholder="CPF" required>
+            <button type="submit">Cadastrar</button>
+            <p>Já tem uma conta? <a href="#" id="show-login">Login</a></p>
+        </form>
+        <form id="login-form" style="display: none;">
+            <input type="email" id="login-email" placeholder="Email" required>
+            <input type="text" id="login-cpf" placeholder="CPF" required>
+            <button type="submit">Login</button>
+            <p>Não tem uma conta? <a href="#" id="show-register">Cadastrar</a></p>
+        </form>
+    </div>
+    <div id="account-management" style="display: none;">
+        <form id="account-form">
+            <input type="text" id="site" placeholder="Site/App" required>
+            <input type="text" id="username" placeholder="Usuário" required>
+            <input type="password" id="password" placeholder="Senha" required>
+            <button type="submit">Adicionar/Alterar</button>
+        </form>
+        <ul id="account-list">
+            <li>
+                <span>Site/App</span>
+                <span>Usuário</span>
+                <span>Senha</span>
+                <span>Editar</span>
+                <span>Remover</span>
+            </li>
+        </ul>
+    </div>
+    <script src="login.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
